@@ -1,11 +1,13 @@
-Java class for parsing **crontab expressions** (actually, a subset of them) and returning dates or milliseconds
-relative to time references, depending on the method. Currently there is just one class which objects are
-created by passing the crontab expression as its only parameter. It parses and "compiles" the expression
-upon creation. You may then work with it passing a time reference.
+#java-crontab-expression#
 
-**NOTE: _It only looks for matches within the same year and the year before or after._**
+Java library for parsing **crontab expressions** (actually, a subset of them) and returning dates or milliseconds
+relative to time references. Currently there is just one class which objects are created by passing the crontab
+expression as its only parameter. It parses and "compiles" the expression upon creation. You may then work with
+it by passing a time reference.
 
-**Current functionality:**
+**IMPORTANT: _It only looks for matches within the same year and the year before or after._**
+
+##Current functionality##
 
 ```
 [constructor] FixedPeriodCron(String crontabExpression)
